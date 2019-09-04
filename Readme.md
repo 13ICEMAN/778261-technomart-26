@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Георгий Лахманов](https://up.htmlacademy.ru/htmlcss/26/user/778261).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
