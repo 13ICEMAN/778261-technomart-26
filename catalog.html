@@ -8,20 +8,20 @@
     <header class="main-header">
       <div class="header-top">
         <div class="container">
-          <a class="main-header-logo" href="index.html">
-            <img class="main-logo" src="img/index-logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
+          <a class="main-header-logo" href="./index.html">
+            <img src="./img/index-logo.svg" width="109" height="19" alt="Логотип интернет-магазина «Техномарт»">
           </a>
-          <form action="#" method="get">
+          <form class="search" action="#" method="get">
             <input class="search-text" type="text" name="search" placeholder="Поиск">
           </form>
-          <ul class="user-list">
-            <li class="user-item">
+          <ul class="order-list">
+            <li class="order-item">
               <a class="header-button bookmark-button" href="#">Закладки: 0</a>
             </li>
-            <li class="user-item">
+            <li class="order-item">
               <a class="header-button cart-button" href="#">Корзина: 10</a>
             </li>
-            <li class="user-item">
+            <li class="order-item">
               <a class="header-button make-order-button" href="#">Оформить заказ</a>
             </li>
           </ul>
@@ -31,8 +31,7 @@
       <div class="container">
         <div class="header-middle">
           <p class="site-title">
-            Интернет-магазин строительных материалов<br>
-            и инструментов для ремонта
+            Интернет-магазин строительных материалов и инструментов для ремонта
           </p>
           <div class="header-contakts">
             <a class="phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -42,10 +41,10 @@
             <a class="user-cabinet-link" href="#">Равшан Джамшутович</a>
             <a class="logout-link" href="#"></a>
             <ul class="cabinet-info">
-              <li class="cabinet-info-item-left">
+              <li class="cabinet-info-orders">
                 <a class="cabinet-link" href="#">Мои заказы</a>
               </li>
-              <li class="cabinet-info-item-right">
+              <li class="cabinet-info-personal">
                 <a class="cabinet-link" href="#">Личный кабинет</a>
               </li>
             </ul>
@@ -86,7 +85,7 @@
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">
-            <img src="img/icon-home.svg" width="14" height="12" alt="Иконка главная страница">
+            <img src="./img/icon-home.svg" width="14" height="12" alt="Иконка главная страница">
           </a>
         </li>
         <li class="breadcrumbs-item">
@@ -112,24 +111,24 @@
               <legend class="filter-parameter">Производители:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
-                  <input class="filter-brand" type="checkbox" name="Bosch" id="Bosch-id" checked>
-                  <label class="filter-checkbox" for="Bosch-id">Bosch</label>
+                  <input class="filter-brand" type="checkbox" name="bosch" id="bosch-id" checked>
+                  <label class="filter-checkbox" for="bosch-id">Bosch</label>
                 </li>
                 <li class="filter-item">
-                  <input class="filter-brand" type="checkbox" name="Interskol" id="Interskol-id">
-                  <label class="filter-checkbox" for="Interskol-id">Интерскол</label>
+                  <input class="filter-brand" type="checkbox" name="interskol" id="interskol-id">
+                  <label class="filter-checkbox" for="interskol-id">Интерскол</label>
                 </li>
                 <li class="filter-item">
-                  <input class="filter-brand" type="checkbox" name="Makita" id="Makita-id" checked>
-                  <label class="filter-checkbox" for="Makita-id">Makita</label>
+                  <input class="filter-brand" type="checkbox" name="makita" id="makita-id" checked>
+                  <label class="filter-checkbox" for="makita-id">Makita</label>
                 </li>
                 <li class="filter-item">
-                  <input class="filter-brand" type="checkbox" name="Dewolt" id="Dewolt-id">
-                  <label class="filter-checkbox" for="Dewolt-id">Dewolt</label>
+                  <input class="filter-brand" type="checkbox" name="dewolt" id="dewolt-id">
+                  <label class="filter-checkbox" for="dewolt-id">Dewolt</label>
                 </li>
                 <li class="filter-item">
-                  <input class="filter-brand" type="checkbox" name="Hitachi" id="Hitachi-id">
-                  <label class="filter-checkbox" for="Hitachi-id">Hitachi</label>
+                  <input class="filter-brand" type="checkbox" name="hitachi" id="hitachi-id">
+                  <label class="filter-checkbox" for="hitachi-id">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
@@ -137,11 +136,11 @@
               <legend class="filter-parameter">Питание:</legend>
               <ul class=power-supply-list>
                 <li class="power-supply-item">
-                  <input class="filter-click" type="radio" name="power-supply" value="Аккумуляторные" id="accumulator" checked>
+                  <input class="filter-click" type="radio" name="power-supply" value="аккумуляторные" id="accumulator" checked>
                   <label class="filter-radio" for="accumulator">Аккумуляторные</label>
                 </li>
                 <li class="power-supply-item">
-                  <input class="filter-click" type="radio" name="power-supply" value="Сетевые" id="electronetwork">
+                  <input class="filter-click" type="radio" name="power-supply" value="сетевые" id="electronetwork">
                   <label class="filter-radio" for="electronetwork">Сетевые</label>
                 </li>
               </ul>
@@ -159,7 +158,7 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <h4 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h4>
-              <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img src="./img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               <div class="catalog-item-price">
                 <p class="catalog-item-price-old">
                   <s>22500 Р.</s>
@@ -171,7 +170,7 @@
             </li>
             <li class="catalog-item">
               <h4 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
-              <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img src="./img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               <div class="catalog-item-price">
                 <p class="catalog-item-price-old">
                   <s>30500 Р.</s>
@@ -183,7 +182,7 @@
             </li>
             <li class="catalog-item">
               <h4 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h4>
-              <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <img src="./img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <div class="catalog-item-price">
                 <p class="catalog-item-price-current">
                   12500 Р.
@@ -192,7 +191,7 @@
             </li>
             <li class="catalog-item">
               <h4 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h4>
-              <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img src="./img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               <div class="catalog-item-price">
                 <p class="catalog-item-price-old">
                   <s>22500 Р.</s>
@@ -204,7 +203,7 @@
             </li>
             <li class="catalog-item">
               <h4 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
-              <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img src="./img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               <div class="catalog-item-price">
                 <p class="catalog-item-price-old">
                   <s>30500 Р.</s>
@@ -216,7 +215,7 @@
             </li>
             <li class="catalog-item">
               <h4 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h4>
-              <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <img src="./img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <div class="catalog-item-price">
                 <p class="catalog-item-price-current">
                   12500 Р.
@@ -225,7 +224,7 @@
             </li>
             <li class="catalog-item">
               <h4 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h4>
-              <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <img src="./img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               <div class="catalog-item-price">
                 <p class="catalog-item-price-old">
                   <s>22500 Р.</s>
@@ -237,7 +236,7 @@
             </li>
             <li class="catalog-item">
               <h4 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h4>
-              <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <img src="./img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               <div class="catalog-item-price">
                 <p class="catalog-item-price-old">
                   <s>30500 Р.</s>
@@ -249,7 +248,7 @@
             </li>
             <li class="catalog-item">
               <h4 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h4>
-              <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <img src="./img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <div class="catalog-item-price">
                 <p class="catalog-item-price-current">
                   12500 Р.
@@ -287,7 +286,7 @@
       <div class="container">
         <div class="footer-top">
           <a class="main-footer-logo" href="index.html">
-            <img class="main-logo" src="img/footer-logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
+            <img src="./img/footer-logo.svg" width="138" height="23" alt="Логотип интернет-магазина «Техномарт»">
           </a>
           <ul class="footer-top-navigation">
             <li class="footer-top-navigation-item">
