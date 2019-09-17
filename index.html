@@ -298,13 +298,13 @@
           <div class="footer-social">
             <ul class="social-list">
               <li class="social-item">
-                <a href="#">Вконтакте</a>
+                <a href="#">Техномарт во Вконтакте</a>
               </li>
               <li class="social-item">
-                <a href="#">Фейсбук</a>
+                <a href="#">Техномарт в Фейсбуке</a>
               </li>
               <li class="social-item">
-                <a href="#">Инстаграм</a>
+                <a href="#">Техномарт в Инстаграме</a>
               </li>
             </ul>
           </div>
@@ -319,5 +319,32 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Офис на карте</h2>
+      <img src="img/map-big.jpg" width="940" height="446" alt="Офис компании по адресу Санкт-Петербург ул. Большая Конюшенная 19/8">
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Письмо</h2>
+      <form class="feedback-form" action="#" method="post">
+        <p class="feedback-item">
+          <label class="feedback-desc" for="feedback-name">Ваше имя:</label><br>
+          <input class="feedback-text" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-item">
+          <label class="feedback-desc" for="feedback-email">Ваш e-mail:</label><br>
+          <input class="feedback-text" type="email" name="email" id="feedback-email" placeholder="email@example.com">
+        </p>
+        <p class="feedback-item">
+          <label class="feedback-desc" for="feedback-field">Текст письма:</label><br>
+          <textarea class="feedback-text" name="feedback" id="feedback-field" rows="3" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button feedback-button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    
   </body>
 </html>
