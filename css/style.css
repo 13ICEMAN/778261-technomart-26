@@ -95,7 +95,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header-top {
-  height: 42px;
+  min-height: 42px;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -108,10 +108,24 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
+  position: relative;
   width: 220px;
-  height: 47px;
+  height: 42px;
   padding: 14px 56px 7px 55px;
   background-color: #ee3643;
+  /* box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24); */
+}
+
+.main-header-logo:after {
+  position: absolute;
+  content: "";
+  top: 42px;
+  left: 0px;
+  width: 220px;
+  height: 5px;
+  background-color: #ee3643;
+  background-position: 0 0;
+  background-repeat: no-repeat;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -323,7 +337,6 @@ input[type="radio"].visually-hidden {
 .user-button-auth:active::before {
   opacity: 0.3;
 }
-
 
 .user-button-registr {
   padding-top: 12px;
