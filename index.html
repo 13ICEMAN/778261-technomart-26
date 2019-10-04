@@ -41,10 +41,10 @@
           </div>
           <ul class="user-navigation">
             <li class="user-navigation-item">
-              <button class="user-button-auth" type="button">Войти</button>
+              <a class="user-button-auth" href="#">Войти</a>
             </li>
             <li class="user-navigation-item">
-              <button class="user-button-registr" type="button">Регистрация</button>
+              <a class="user-button-registr" href="#">Регистрация</a>
             </li>
           </ul>
           <nav class="main-navigation">
@@ -78,34 +78,50 @@
 
     <main class="container">
       <h1 class="visually-hidden">Техномарт</h1>
-      <section class="overal-catalog">
-        <ul class="overal-catalog-list">
-          <li class="overal-catalog-item materials">
-            <span class="overall-catalog-item-title">Материалы</span>
+      <div class="overall-catalog-columns">
+        <div class="overall-catalog-left">
+          <div class="overal-catalog-item materials">
+            <div class="flag flag-new">новинка</div>
+            <span class="overall-catalog-title">Материалы</span>
             <a class="overall-catalog-button" href="#">на любой вкус</a>
-          </li>
-          <li class="overal-catalog-item instrument">
-            <span class="overall-catalog-item-title">Инструмент</span>
+          </div>
+          <div class="overal-catalog-item instrument">
+            <span class="overall-catalog-title">Инструмент</span>
             <a class="overall-catalog-button" href="#">на все случаи</a>            
-          </li>
-          <li class="overal-catalog-item technic">
-            <span class="overall-catalog-item-title">Техника</span>
-            <a class="overall-catalog-button" href="#">для стройки</a>            
-          </li>
-          <li class="overal-catalog-item discount">
-            <span class="overall-catalog-item-title">Скидки 50%</span>
-            <a class="overall-catalog-button" href="#">на 350 товаров</a>            
-          </li>
-          <li class="overal-catalog-item delivery">
-            <span class="overall-catalog-item-title">Доставка</span>
-            <a class="overall-catalog-button" href="#">бесплатно</a>            
-          </li>
-        </ul>
-      </section>
+          </div>
+          
+          <section class="slider">
+            <h2 class="visually-hidden">Инструменты</h2>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <p class="slider-title">Дрели</p>
+                <p class="slider-text">Соседям на радость!</p>
+                <a class="main-button slider-button" href="#">Открыть каталог</a>
+              </li>
+              <li class="slider-item">
+                <p class="slider-title">Перфораторы</p>
+                <p class="slider-text">Настоящие мужские игрушки</p>
+                <a class="main-button slider-button" href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>
+          </section>
 
-      <section class="slider">
-          <h2 class="visually-hidden">Инструменты</h2>
-      </section>
+        </div>
+        <div class="overall-catalog-right">
+          <div class="overal-catalog-item technic">
+            <span class="overall-catalog-title">Техника</span>
+            <a class="overall-catalog-button" href="#">для стройки</a>            
+          </div>
+          <div class="overal-catalog-item discount">
+            <span class="overall-catalog-title">Скидки 50%</span>
+            <a class="overall-catalog-button" href="#">на 350 товаров</a>            
+          </div>
+          <div class="overal-catalog-item delivery">
+            <span class="overall-catalog-title">Доставка</span>
+            <a class="overall-catalog-button" href="#">бесплатно</a>            
+          </div>
+        </div>
+      </div>      
 
       <section class="catalog">
         <div class="catalog-top">
@@ -114,8 +130,12 @@
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
+            <div class="actions">
+              <a href="#" class="buy">Купить</a>
+              <a href="#" class="bookmark">В закладки</a>
+            </div>
             <img src="./img/bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
             <div class="catalog-item-price">
               <p class="catalog-item-price-old">
                 <s>32500 Р.</s>
@@ -126,8 +146,12 @@
             </div>
           </li>
           <li class="catalog-item">
-            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
+            <div class="actions">
+              <a href="#" class="buy">Купить</a>
+              <a href="#" class="bookmark">В закладки</a>
+            </div>
             <img src="./img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
             <div class="catalog-item-price">
               <p class="catalog-item-price-old">
                 <s>22500 Р.</s>
@@ -137,9 +161,15 @@
               </p>
             </div>
           </li>
+
+
           <li class="catalog-item">
-            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
+            <div class="actions">
+              <a href="#" class="buy">Купить</a>
+              <a href="#" class="bookmark">В закладки</a>
+            </div>
             <img src="./img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
             <div class="catalog-item-price">
               <p class="catalog-item-price-old">
                 <s>30500 Р.</s>
@@ -149,15 +179,24 @@
               </p>
             </div>
           </li>
+
+
           <li class="catalog-item">
-            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
+            <div class="flag flag-new">новинка</div>
+            <div class="actions">
+              <a href="#" class="buy">Купить</a>
+              <a href="#" class="bookmark">В закладки</a>
+            </div>
             <img src="./img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+            <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
             <div class="catalog-item-price">
               <p class="catalog-item-price-current">
                 12500 Р.
               </p>
             </div>
           </li>
+
+          
         </ul>
       </section>
 
