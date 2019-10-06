@@ -166,7 +166,6 @@ input[type="radio"].visually-hidden {
 
 .bookmark-button {
   position: relative;
-  padding-right: auto;
   padding-left: 45px;
 }
 
@@ -185,7 +184,6 @@ input[type="radio"].visually-hidden {
 
 .cart-button {
   position: relative;
-  padding-right: auto;
   padding-left: 49px;
 }
 
@@ -624,7 +622,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: bold;
   list-style: none;
 }
@@ -637,6 +635,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
   padding-bottom: 3px;
   border: 1px solid #eaeaea;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .flag {
@@ -663,12 +666,90 @@ input[type="radio"].visually-hidden {
 
 .catalog-item .actions {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 170px;
+  padding: 43px 0;
+  text-align: center;
+  background-color: #ffffff;
+  z-index: 10;
 }
 
-.brands-item {
-  width: 220px;
-  margin-bottom: 20px;
-  border: 1px solid #eaeaea;
+.catalog-item:hover .actions,
+.catalog-item:focus .actions {
+  display: block;
+}
+
+.actions .buy,
+.actions .bookmark {
+  display: block;
+  width: 135px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #63a63e;
+}
+
+.actions .buy {
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 3px;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.actions .buy::before {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: 14px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.actions .buy:hover::before,
+.actions .buy:focus::before {
+  opacity: 1;
+}
+
+.actions .buy:hover,
+.actions .buy:focus {
+  background-color: #5fbb2d;
+}
+
+.actions .buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.actions .bookmark {
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 3px;
+  border: 3px solid #63a63e;
+  color: #32425c;
+  background: #ffffff;
+}
+
+.actions .bookmark:hover,
+.actions .bookmark:focus {
+  border-color: #32425c;
+}
+
+.actions .bookmark:active {
+  opacity: 0.3;
 }
 
 .catalog-item-title {
@@ -716,6 +797,26 @@ input[type="radio"].visually-hidden {
   border-left-color: #ee3643;
 }
 
+.catalog {
+  margin-bottom: 1px;
+}
+
+.brands-item {
+  width: 220px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+}
+
+.brands-item:hover,
+.brands-item:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brands-item:active {
+  opacity: 0.3;
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
 .bosch {
   padding: 52px 46px 49px 46px;
 }
@@ -759,7 +860,7 @@ input[type="radio"].visually-hidden {
 .service-text,
 .company-text,
 .contacts-text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -944,7 +1045,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-main {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 .inner-page .cart-button {
@@ -1121,7 +1222,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-title {
-  font-family: "Cuprum";
+  font-family: "Cuprum", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -1196,6 +1297,14 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.inner-page .catalog-item {
+  margin-right: 20px;
+}
+
+.inner-page .catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
@@ -1218,7 +1327,7 @@ input[type="radio"].visually-hidden {
 }
 
 .perforator .headline {
-  font-family: "Cuprum";
+  font-family: "Cuprum", sans-serif;
 }
 
 .perforator-text {
@@ -1238,7 +1347,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
