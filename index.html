@@ -256,8 +256,6 @@
         </section>
       </div>
 
-
-
       <section class="service">
         <div class="container">
           <h2 class="headline">Сервисы</h2>
@@ -306,8 +304,6 @@
         </div>
       </section>
 
-
-
       <div class="container">
         <div class="main-info">
           <section class="company">
@@ -326,7 +322,7 @@
           <section class="contacts">
             <h2 class="headline">Контакты</h2>
             <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-              <a class=map-link href="#">
+              <a class="map-link" href="#">
                 <img class="main-map" src="./img/map.jpg" width="300" height="158" alt="Офис компании по адресу Санкт-Петербург ул. Большая Конюшенная 19/8">
               </a>        
             <a class="main-button contacts-button" href="#">Заблудились? Напишите нам!</a>
@@ -424,7 +420,8 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Офис на карте</h2>
-      <img src="img/map-big.jpg" width="940" height="446" alt="Офис компании по адресу Санкт-Петербург ул. Большая Конюшенная 19/8">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CGwKjEKc" width="940" height="446.2" frameborder="1" allowfullscreen="true"></iframe>
+      <img src="img/map-big.jpg" width="940" height="446.2" alt="Офис компании по адресу Санкт-Петербург ул. Большая Конюшенная 19/8">
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
@@ -432,8 +429,8 @@
       <h2 class="visually-hidden">Письмо</h2>
       <form class="feedback-form" action="#" method="post">
         <p class="feedback-item">
-          <label class="feedback-desc" for="feedback-name">Ваше имя:</label><br>
-          <input class="feedback-text" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+          <label class="feedback-desc" for="feedback-fullname">Ваше имя:</label><br>
+          <input class="feedback-text" type="text" name="fullname" id="feedback-fullname" placeholder="Имя Фамилия">
         </p>
         <p class="feedback-item">
           <label class="feedback-desc" for="feedback-email">Ваш e-mail:</label><br>
@@ -449,6 +446,10 @@
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+    <script src="js/feedback.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/message.js"></script>
     
   </body>
 </html>

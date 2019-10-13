@@ -130,6 +130,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo:hover,
 .main-header-logo:focus {
+  outline: none;
   background-color: #ca2c37;
 }
 
@@ -211,6 +212,7 @@ input[type="radio"].visually-hidden {
 
 .header-button:hover,
 .header-button:focus {
+  outline: none;
   background-color: #212a3a;
 }
 
@@ -398,6 +400,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation a:hover,
 .user-navigation a:focus {
+  outline: none;
   color: #ee3643;
 }
 
@@ -432,6 +435,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation-link:hover,
 .main-navigation-link:focus {
+  outline: none;
   background-color: #293449;
 }
 
@@ -586,6 +590,7 @@ input[type="radio"].visually-hidden {
 
 .overall-catalog-button:hover,
 .overall-catalog-button:focus {
+  outline: none;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -622,6 +627,7 @@ input[type="radio"].visually-hidden {
   height: 10px;
   margin-right: 10px;
   border-radius: 50%;
+  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -742,8 +748,6 @@ input[type="radio"].visually-hidden {
   padding-left: 3px;
 }
 
-
-
 .main-button {
   display: block;
   padding-top: 11px;
@@ -760,6 +764,7 @@ input[type="radio"].visually-hidden {
 
 .main-button:hover,
 .main-button:focus {
+  outline: none;
   background-color: #ca2c37;
 }
 
@@ -822,6 +827,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover,
 .catalog-item:focus {
+  outline: none;
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -862,6 +868,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover .actions,
 .catalog-item:focus .actions {
+  outline: none;
   display: block;
 }
 
@@ -909,6 +916,7 @@ input[type="radio"].visually-hidden {
 
 .actions .buy:hover,
 .actions .buy:focus {
+  outline: none;
   background-color: #5fbb2d;
 }
 
@@ -928,6 +936,7 @@ input[type="radio"].visually-hidden {
 
 .actions .bookmark:hover,
 .actions .bookmark:focus {
+  outline: none;
   border-color: #32425c;
 }
 
@@ -992,6 +1001,7 @@ input[type="radio"].visually-hidden {
 
 .brands-item:hover,
 .brands-item:focus {
+  outline: none;
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -1295,6 +1305,7 @@ input[type="radio"].visually-hidden {
 .footer-top-navigation-link:focus,
 .footer-middle-navigation-link:hover,
 .footer-middle-navigation-link:focus {
+  outline: none;
   text-decoration: underline;
 }
 
@@ -1378,6 +1389,7 @@ input[type="radio"].visually-hidden {
 
 .social-button:hover,
 .social-button:focus {
+  outline: none;
   background-color: #ee3643;
 }
 
@@ -1403,6 +1415,7 @@ input[type="radio"].visually-hidden {
 
 .footer-info-link:hover,
 .footer-info-link:focus {
+  outline: none;
   text-decoration: underline;
 }
 
@@ -1457,6 +1470,7 @@ input[type="radio"].visually-hidden {
 
 .user-cabinet-link:hover::before,
 .user-cabinet-link:focus::before {
+  outline: none;
   opacity: 1;
 }
 
@@ -1493,6 +1507,7 @@ input[type="radio"].visually-hidden {
 
 .logout-link:hover::before,
 .logout-link:focus::before {
+  outline: none;
   opacity: 1;
 }
 
@@ -1535,6 +1550,7 @@ input[type="radio"].visually-hidden {
 
 .cabinet-link:hover,
 .cabinet-link:focus {
+  outline: none;
   color: #ee3643;
 }
 
@@ -1906,10 +1922,12 @@ input[type="radio"].visually-hidden {
   text-decoration-style: dotted;
   text-decoration-color: #ee3643;
   text-transform: uppercase;
+  vertical-align: baseline;
 }
 
 .sort-parameter-link:hover,
 .sort-parameter-link:focus {
+  outline: none;
   color: rgba(0, 0, 0, 1);
   text-decoration-style: solid;
 }
@@ -1933,6 +1951,7 @@ input[type="radio"].visually-hidden {
   border-right-color: transparent;
   border-left-width: 6px;
   border-left-color: transparent;
+  vertical-align: baseline;
   opacity: 0.3;
 }
 
@@ -1948,6 +1967,7 @@ input[type="radio"].visually-hidden {
 .arrow-up:focus::before,
 .arrow-down:hover::before,
 .arrow-down:focus::before {
+  outline: none;
   opacity: 1;
 }
 
@@ -1992,6 +2012,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-link:hover,
 .pagination-link:focus{
+  outline: none;
   border: 1px solid #bdc6ca;
 }
 
@@ -2052,14 +2073,63 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
+  display: none;
   position: fixed;
   background-color: #ffffff;
   z-index: 30;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-map {
-  display: none;
   top: 50%;
   left: 50%;
   width: 940px;
@@ -2068,6 +2138,21 @@ input[type="radio"].visually-hidden {
   margin-left: -470px;
   box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.75);
 }
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 4;
+}
+
+.modal-map iframe {
+  position: relative;
+  border: none;
+  z-index: 5;
+}
+
 
 .modal-feedback,
 .modal-message {
@@ -2079,7 +2164,6 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-  display: none;
   padding-top: 23px;
   padding-right: 80px;
   padding-left: 80px;
@@ -2096,6 +2180,7 @@ input[type="radio"].visually-hidden {
   font-size: 0;
   background-color: transparent;
   cursor: pointer;
+  z-index: 6;
 }
 
 .modal-close::before,
@@ -2205,7 +2290,6 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-message {
-  display: none;
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
 }
 
@@ -2256,17 +2340,5 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ffffff;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
