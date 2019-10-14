@@ -421,7 +421,6 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   margin: 0;
   padding: 0;
-  
   list-style: none;
 }
 
@@ -1449,21 +1448,24 @@ input[type="radio"].visually-hidden {
 
 .user-cabinet {  
   margin: 0;
-  margin-top: 57px;
+  margin-top: 46px;
   margin-left: auto;
   padding: 0;
 }
 
-.user-cabinet-link {
+.user-door {
   position: relative;
-  padding-top: 10px;
-  padding-right: 23px;
-  padding-bottom: 11px;
+  padding-top: 11px;
+  padding-bottom: 10px;
   padding-left: 46px;
+  background-color: #ffffff;
+}
+
+.user-cabinet-link {  
+  padding-right: 23px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .user-cabinet-link::before {
@@ -1494,15 +1496,12 @@ input[type="radio"].visually-hidden {
 }
 
 .logout-link {
-  display: inline-block;
   position: relative;
   width: 40px;
   padding-top: 11px;
   padding-right: 25px;
   padding-bottom: 11px;
   padding-left: 20px;
-  background-color: #ffffff;
-  vertical-align: middle;
 }
 
 .logout-link::before {
@@ -1533,7 +1532,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 14px;
+  padding-top: 4px;
   padding-left: 18px;
   list-style: none;
 }
@@ -1904,31 +1903,30 @@ input[type="radio"].visually-hidden {
 .sort-parameter {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0;
   padding: 0;
-  padding-top: 6px;
   padding-left: 140px;
   list-style: none;
 }
 
-.sort-parameter-item:nth-child(2) {
-  padding-left: 71px;
+.sort-price {
+  margin-right: 71px;
 }
 
-.sort-parameter-item:nth-child(3) {
-  padding-left: 65px;
+.sort-type {
+  margin-right: 65px;
 }
 
-.sort-parameter-item:nth-child(4) {
-  padding-left: 47px;
+.sort-func {
+  margin-right: 47px;
 }
 
-.sort-parameter-item:nth-child(5) {
-  padding-left: 19px;
+.arrow-up {
+  margin-right: 14px;
 }
 
 .sort-parameter-link {
-  display: inline-block;
   font-size: 13px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
@@ -1936,7 +1934,6 @@ input[type="radio"].visually-hidden {
   text-decoration-style: dotted;
   text-decoration-color: #ee3643;
   text-transform: uppercase;
-  vertical-align: baseline;
 }
 
 .sort-parameter-link:hover,

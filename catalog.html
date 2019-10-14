@@ -43,8 +43,10 @@
             <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="user-cabinet">
-            <a class="user-cabinet-link" href="#">Равшан Джамшутович</a>
-            <a class="logout-link" href="#"></a>
+            <div class="user-door">
+              <a class="user-cabinet-link" href="#">Равшан Джамшутович</a>
+              <a class="logout-link" href="#"></a>
+            </div>
             <ul class="cabinet-info">
               <li class="cabinet-info-orders">
                 <a class="cabinet-link" href="#">Мои заказы</a>
@@ -169,23 +171,15 @@
           <section class="catalog">
             <section class="sort">
               <h2 class="sort-title">Сортировка:</h2>
-              <ul class="sort-parameter">
-                <li class="sort-parameter-item">
-                  <a class="sort-parameter-link" href="#">По цене</a>
-                </li>
-                <li class="sort-parameter-item">
-                  <a class="sort-parameter-link" href="#">По типу</a>
-                </li>
-                <li class="sort-parameter-item">
-                  <a class="sort-parameter-link" href="#">По функционалу</a>
-                </li>
-                <li class="sort-parameter-item">
-                  <a class="sort-parameter-link arrow-up" href="#">По возрастанию</a>
-                </li>
-                <li class="sort-parameter-item">
-                  <a class="sort-parameter-link arrow-down" href="#">По убыванию</a>
-                </li>
-              </ul>            
+              <div class="sort-parameter">
+                <a class="sort-parameter-link sort-price" href="#">По цене</a>
+                <a class="sort-parameter-link sort-type" href="#">По типу</a>
+                <a class="sort-parameter-link sort-func" href="#">По функционалу</a>
+                <div class="sort-controls">
+                  <a class="arrow-up" href="#">По возрастанию</a>
+                  <a class="arrow-down" href="#">По убыванию</a>
+                </div>
+              </div>            
             </section>
             <h3 class="visually-hidden">Каталог перфораторов</h3>
             <ul class="catalog-list">
