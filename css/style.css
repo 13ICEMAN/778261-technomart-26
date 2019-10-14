@@ -418,10 +418,10 @@ input[type="radio"].visually-hidden {
 .main-navigation-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  padding-right: 26px;
-  padding-left: 25px;
+  
   list-style: none;
 }
 
@@ -807,7 +807,6 @@ input[type="radio"].visually-hidden {
 .brands-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
@@ -820,9 +819,15 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   position: relative;
   width: 220px;
+  margin-right: 20px;
   margin-bottom: 20px;
   padding-bottom: 3px;
   border: 1px solid #eaeaea;
+}
+
+.catalog-item:nth-child(4n),
+.brands-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover,
@@ -995,17 +1000,22 @@ input[type="radio"].visually-hidden {
 
 .brands-item {
   width: 220px;
+  margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #eaeaea;
 }
 
-.brands-item:hover,
-.brands-item:focus {
+.brands-link {
+  display: block;
+}
+
+.brands-link:hover,
+.brands-link:focus {
   outline: none;
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.brands-item:active {
+.brands-link:active {
   opacity: 0.3;
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
@@ -1211,6 +1221,7 @@ input[type="radio"].visually-hidden {
 }
 
 .company-text-delivery {
+  width: 400px;
   margin-bottom: 21px;
 }
 
@@ -1253,7 +1264,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts-text {
-  width: 179px;
+  width: 180px;
   margin-bottom: 31px;
 }
 
@@ -1357,9 +1368,9 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright {
-  width: 228px;
+  width: 230px;
   margin-top: 37px;
-  margin-right: 160px;
+  margin-right: 158px;
   margin-left: 2px;
 }
 
@@ -1483,6 +1494,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logout-link {
+  display: inline-block;
   position: relative;
   width: 40px;
   padding-top: 11px;
@@ -1490,6 +1502,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 11px;
   padding-left: 20px;
   background-color: #ffffff;
+  vertical-align: middle;
 }
 
 .logout-link::before {
@@ -1580,7 +1593,7 @@ input[type="radio"].visually-hidden {
 .breadcrumbs-item::after {
   position: absolute;
   content: "";
-  top: 9px;
+  top: 40%;
   right: -22px;
   width: 7px;
   height: 7px;
@@ -1877,6 +1890,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .sort {

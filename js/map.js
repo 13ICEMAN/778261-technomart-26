@@ -1,22 +1,22 @@
-var maplink = document.querySelector(".map-link");
-var mappopup = document.querySelector(".modal-map");
-var mapclose = mappopup.querySelector(".modal-close");
+var mapLink = document.querySelector(".map-link");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
 
-maplink.addEventListener("click", function (evt) {
+mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mappopup.classList.add("modal-show");
+  mapPopup.classList.add("modal-show");
 });
 
-mapclose.addEventListener("click", function (evt) {
+mapClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  mappopup.classList.remove("modal-show");
+  mapPopup.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (mappopup.classList.contains("modal-show")) {
-      mappopup.classList.remove("modal-show");
+    if (mapPopup.classList.contains("modal-show")) {
+      mapPopup.classList.remove("modal-show");
     }
   }
 });
