@@ -49,7 +49,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #000000;
@@ -310,7 +310,7 @@ input[type="radio"].visually-hidden {
   margin-top: 57px;
 }
 
-.phone-link {
+.phone-link-top {
   position: relative;
   padding-top: 8px;
   padding-right: 50px;
@@ -322,7 +322,7 @@ input[type="radio"].visually-hidden {
   color: #ee3643;
 }
 
-.phone-link::before {
+.phone-link-top::before {
   position: absolute;
   content: "";
   top: 10px;
@@ -808,7 +808,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   list-style: none;
 }
@@ -883,7 +883,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-bottom: 8px;
   border-radius: 3px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -1066,7 +1066,7 @@ input[type="radio"].visually-hidden {
 .contacts-text {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1178,7 +1178,7 @@ input[type="radio"].visually-hidden {
 
 .bottom-slider-text {
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1333,9 +1333,14 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts {
+  width: 323px;
   margin-top: 28px;
   margin-bottom: 49px;
   margin-left: 4px;  
+  color: #f3f7f9;
+}
+
+.phone-link-bottom {
   color: #f3f7f9;
 }
 
@@ -1435,7 +1440,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-main {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .inner-page .cart-button {
@@ -1448,7 +1453,7 @@ input[type="radio"].visually-hidden {
 
 .user-cabinet {  
   margin: 0;
-  margin-top: 46px;
+  margin-top: 47px;
   margin-left: auto;
   padding: 0;
 }
@@ -1530,9 +1535,10 @@ input[type="radio"].visually-hidden {
 .cabinet-info {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   margin: 0;
+  margin-top: 6px;
   padding: 0;
-  padding-top: 4px;
   padding-left: 18px;
   list-style: none;
 }
@@ -1623,7 +1629,7 @@ input[type="radio"].visually-hidden {
   padding-top: 30px;
   padding-bottom: 29px;
   padding-left: 28px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -1773,6 +1779,7 @@ input[type="radio"].visually-hidden {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
+  vertical-align: baseline;
 }
 
 .filter-list,
@@ -1930,9 +1937,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #ee3643;
+  border-bottom: 1px dotted #ee3643;
   text-transform: uppercase;
 }
 
@@ -1940,12 +1945,12 @@ input[type="radio"].visually-hidden {
 .sort-parameter-link:focus {
   outline: none;
   color: rgba(0, 0, 0, 1);
-  text-decoration-style: solid;
+  border-bottom: 1px solid #ee3643;
 }
 
 .sort-parameter-link:active {
   color: #ee3643;
-  text-decoration: none;
+  border-bottom: none;
 }
 
 .arrow-up,
@@ -1988,6 +1993,16 @@ input[type="radio"].visually-hidden {
 
 .arrow-down:active::before {
   border-top-color: #ee3643;
+}
+
+.sort-active {
+  border-bottom: none;
+  color: #ee3643;
+}
+
+.arrow-active::before {
+  border-bottom-color: #ee3643;
+  opacity: 1;
 }
 
 .inner-page .catalog-item {
@@ -2066,7 +2081,7 @@ input[type="radio"].visually-hidden {
 
 .perforator .headline {
   margin-bottom: 27px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .perforator-text {
@@ -2175,7 +2190,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
-  padding-top: 23px;
+  padding-top: 47px;
   padding-right: 80px;
   padding-left: 80px;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
@@ -2221,7 +2236,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -2235,13 +2250,17 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-item {
-  margin-bottom: -4px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
 }
 
 .feedback-item input[type="text"],
 .feedback-item input[type="email"] {
   width: 220px;
-  margin-top: 8px;
+  margin-top: 9px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 14px;
@@ -2257,6 +2276,7 @@ input[type="radio"].visually-hidden {
   padding-left: 14px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  resize: none;
 }
 
 .feedback-item input:hover,
@@ -2272,7 +2292,7 @@ input[type="radio"].visually-hidden {
 
 .modal-feedback .modal-bottom {
   width: 100%;
-  margin-top: 37px;
+  margin-top: 16px;
   background-color: #f4f4f4;
 }
 

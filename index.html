@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -39,7 +39,7 @@
             Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
           </p>
           <div class="header-contaсts">
-            <a class="phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <a class="phone-link-top" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <ul class="user-navigation">
@@ -143,7 +143,7 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
+                <a href="buy.html" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
               <img src="./img/bfg-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
@@ -159,7 +159,7 @@
             </li>
             <li class="catalog-item">
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
+                <a href="buy.html" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
               <img src="./img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -175,7 +175,7 @@
             </li>
             <li class="catalog-item">
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
+                <a href="buy.html" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
               <img src="./img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -192,7 +192,7 @@
             <li class="catalog-item">
               <div class="flag flag-new">новинка</div>
               <div class="actions">
-                <a href="#" class="buy">Купить</a>
+                <a href="buy.html" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
               <img src="./img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -275,26 +275,26 @@
               <li class="bottom-slider-item">
                 <p class="bottom-slider-title">Доставка</p>
                 <p class="bottom-slider-text">
-                  Мы с удовольствием доставим ваш товар прямо<br>
+                  Мы с удовольствием доставим ваш товар прямо<br> <!--Разрешен -->
                   к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,<br>
+                  Ведь мы неплохо заработаем,<br> <!--Разрешен -->
                   поднимая его на ваш этаж!
                 </p>
               </li>
               <li class="bottom-slider-item">
                 <p class="bottom-slider-title">Гарантия</p>
                 <p class="bottom-slider-text">
-                  Если купленный у нас товар поломается или заискрит,<br>
+                  Если купленный у нас товар поломается или заискрит,<br> <!--Разрешен -->
                   а также в случае пожара, спровоцированного его возгоранием,
                   вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-                  сгоревший товар на новый.<br>
+                  сгоревший товар на новый.<br> <!--Разрешен -->
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
               <li class="bottom-slider-item">
                 <p class="bottom-slider-title">Кредит</p>
                 <p class="bottom-slider-text">
-                  Залезть в долговую яму стало проще!<br>
+                  Залезть в долговую яму стало проще!<br> <!--Разрешен -->
                   Кредитные консультанты придут вам на помощь.
                 </p>
                 <a class="main-button bottom-slider-button" href="#">Отправить заявку</a>
@@ -322,10 +322,10 @@
           <section class="contacts">
             <h2 class="headline">Контакты</h2>
             <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис:</p>
-              <a class="map-link" href="#">
+              <a class="map-link" href="bighors19onmap.html">
                 <img class="main-map" src="./img/map.jpg" width="300" height="158" alt="Офис компании по адресу Санкт-Петербург ул. Большая Конюшенная 19/8">
               </a>        
-            <a class="main-button contacts-button" href="#">Заблудились? Напишите нам!</a>
+            <a class="main-button contacts-button" href="feedback.html">Заблудились? Напишите нам!</a>
           </section>
         </div>  
       </div>
@@ -358,8 +358,8 @@
         
         <div class="footer-middle">
           <p class="footer-contacts">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            <a class="phone-link-bottom" href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
           <ul class="footer-middle-navigation">
             <li class="footer-middle-navigation-item">
@@ -381,7 +381,7 @@
       <div class="footer-bottom">
         <div class="container">
           <p class="footer-copyright">
-            © 2010-2019 Компания «Техномарт»<br>
+            © 2010-2019 Компания «Техномарт»
             Все права защищены
           </p>
           <div class="footer-social">
@@ -427,17 +427,17 @@
 
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Письмо</h2>
-      <form class="feedback-form" action="#" method="post">
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
-          <label class="feedback-desc" for="feedback-fullname">Ваше имя:</label><br>
+          <label class="feedback-desc" for="feedback-fullname">Ваше имя:</label>
           <input class="feedback-text" type="text" name="fullname" id="feedback-fullname" placeholder="Имя Фамилия">
         </p>
         <p class="feedback-item">
-          <label class="feedback-desc" for="feedback-email">Ваш e-mail:</label><br>
+          <label class="feedback-desc" for="feedback-email">Ваш e-mail:</label>
           <input class="feedback-text" type="email" name="email" id="feedback-email" placeholder="email@example.com">
         </p>
         <p class="feedback-item">
-          <label class="feedback-desc" for="feedback-field">Текст письма:</label><br>
+          <label class="feedback-desc" for="feedback-field">Текст письма:</label>
           <textarea class="feedback-text" name="feedback" id="feedback-field" rows="5" placeholder="В свободной форме"></textarea>
         </p>
         <div class="modal-bottom">
@@ -457,9 +457,9 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <script src="js/feedback.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/message.js"></script>
+    <script src="js/feedback.min.js"></script>
+    <script src="js/map.min.js"></script>
+    <script src="js/message.min.js"></script>
     
   </body>
 </html>
