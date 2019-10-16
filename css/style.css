@@ -1551,8 +1551,8 @@ input[type="radio"].visually-hidden {
 .cabinet-info-orders::after {
   position: absolute;
   content: "";
-  top: 11px;
-  right: -20px;
+  top: 30%;
+  right: -22px;
   width: 4px;
   height: 4px;
   border-radius: 50%;

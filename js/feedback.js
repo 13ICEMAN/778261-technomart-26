@@ -5,11 +5,24 @@ var form = fbPopup.querySelector("form");
 var fullName = fbPopup.querySelector("[name=fullname]");
 var email = fbPopup.querySelector("[name=email]");
 var feedback = fbPopup.querySelector("[name=feedback]");
+var isStorageSupport = true;
+  var storage = "";
+  
+  try {
+    storage = localStorage.getItem("fullName");
+  } catch (err) {
+    isStorageSupport = false;
+  }
 
 fbLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   fbPopup.classList.add("modal-show");
-  fullName.focus();
+  if (storage) {
+    fullName.value = storage;
+    email.focus();
+  } else {
+    fullName.focus();
+  }
 });
 
 fbClose.addEventListener("click", function (evt) {
@@ -24,6 +37,10 @@ form.addEventListener("submit", function (evt) {
     fbPopup.classList.remove("modal-error");
     fbPopup.offsetWidth = fbPopup.offsetWidth;
     fbPopup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("fullname", fullname.value);
+    }
   }
 });
 
