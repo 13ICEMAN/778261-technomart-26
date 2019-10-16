@@ -19,7 +19,7 @@ fbClose.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!name.value || !email.value || !feedback.value) {
+  if (!fullname.value || !email.value || !feedback.value) {
     evt.preventDefault();
     fbPopup.classList.remove("modal-error");
     fbPopup.offsetWidth = fbPopup.offsetWidth;
