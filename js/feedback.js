@@ -6,13 +6,13 @@ var fullName = fbPopup.querySelector("[name=fullname]");
 var email = fbPopup.querySelector("[name=email]");
 var feedback = fbPopup.querySelector("[name=feedback]");
 var isStorageSupport = true;
-  var storage = "";
+var storage = "";
   
-  try {
-    storage = localStorage.getItem("fullName");
-  } catch (err) {
-    isStorageSupport = false;
-  }
+try {
+  storage = localStorage.getItem("fullName");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 fbLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -32,7 +32,7 @@ fbClose.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
-  if (!fullname.value || !email.value || !feedback.value) {
+  if (!fullName.value || !email.value || !feedback.value) {
     evt.preventDefault();
     fbPopup.classList.remove("modal-error");
     fbPopup.offsetWidth = fbPopup.offsetWidth;
